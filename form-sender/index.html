@@ -12,13 +12,14 @@
       rel="stylesheet"
     />
     <title>Form</title>
+    <script src="./app.js" defer></script>
   </head>
   <body>
     <header>
       <h1>Заполните форму</h1>
     </header>
     <main>
-      <form action="." method="post">
+      <form method="post">
         <div class="block">
           <label for="firstName">Имя:</label>
           <input
@@ -26,6 +27,7 @@
             name="firstName"
             id="firstName"
             placeholder="Иван"
+            required
           />
         </div>
         <div class="block">
@@ -46,6 +48,7 @@
             min="18"
             max="60"
             placeholder="24"
+            required
           />
         </div>
         <div class="radio-group">
@@ -53,21 +56,27 @@
           <hr />
           <div class="block">
             <label for="male">Мужской</label>
-            <input type="radio" id="male" name="gender" value="male" />
+            <input type="radio" id="male" name="gender" value="male" required />
           </div>
           <div class="block">
             <label for="female">Женский</label>
-            <input type="radio" id="female" name="gender" value="female" />
+            <input
+              type="radio"
+              id="female"
+              name="gender"
+              value="female"
+              required
+            />
           </div>
           <div class="block">
             <label for="n/a">Предпочитаю не говорить</label>
-            <input type="radio" id="n/a" name="gender" value="N/A" />
+            <input type="radio" id="n/a" name="gender" value="N/A" required />
           </div>
           <hr />
         </div>
         <div class="block">
           <label for="education">Образование:</label>
-          <select name="education" id="education">
+          <select name="education" id="education" required>
             <option value="school">Среднее школьное</option>
             <option value="bachelor">Бакалавр</option>
             <option value="master">Магистр</option>
@@ -81,6 +90,7 @@
             name="phone"
             id="phone"
             placeholder="+73352459512"
+            required
           />
         </div>
         <div class="block">
@@ -90,6 +100,7 @@
             name="email"
             id="email"
             placeholder="Ivanivanov@gmail.com"
+            required
           />
         </div>
         <button type="submit">Отправить</button>
