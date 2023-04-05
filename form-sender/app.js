@@ -24,6 +24,7 @@ submitButton.addEventListener("click", (e) => {
     email: email.value,
   };
 
+  // Создаем и отправляем запрос
   let response = fetch("https://eoyesn7cru0ofv2.m.pipedream.net", {
     method: "POST",
     headers: {
@@ -36,3 +37,5 @@ submitButton.addEventListener("click", (e) => {
       console.log(json);
     });
 });
+
+// https://pipedream.com/@valdemarcheck/requestbin-p_ZJCorAk/inspect
