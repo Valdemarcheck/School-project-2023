@@ -31,11 +31,7 @@ submitButton.addEventListener("click", (e) => {
       "Content-Type": "application/json",
     },
     body: JSON.stringify(data),
-  })
-    .then((response) => response.json())
-    .then((json) => {
-      console.log(json);
-    });
+  }).then((response) => console.log(response));
 });
 
 // https://pipedream.com/@valdemarcheck/requestbin-p_ZJCorAk/inspect
