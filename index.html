@@ -16,95 +16,62 @@
   </head>
   <body>
     <header>
-      <h1>Заполните форму</h1>
+      <h1 class="accent">Заполните форму</h1>
+      <ul>
+        <li>Главная</li>
+        <li>О нас</li>
+        <li class="accent">Войти</li>
+      </ul>
     </header>
     <main>
-      <form method="post">
-        <div class="block">
-          <label for="firstName">Имя:</label>
-          <input
-            type="text"
-            name="firstName"
-            id="firstName"
-            placeholder="Иван"
-            required
-          />
-        </div>
-        <div class="block">
-          <label for="secondName">Фамилия</label>
-          <input
-            type="text"
-            name="secondName"
-            id="secondName"
-            placeholder="Иванов"
-          />
-        </div>
-        <div class="block">
-          <label for="age">Возраст:</label>
-          <input
-            type="number"
-            name="age"
-            id="age"
-            min="18"
-            max="60"
-            placeholder="24"
-            required
-          />
-        </div>
-        <div class="radio-group">
-          <label for="gender">Ваш пол:</label>
-          <hr />
+      <div class="left">
+        <h2>Давайте поговорим?</h2>
+        <p>
+          Если у вас есть вопросы - задайте их нам на почту. А мы постараемся
+          ответить как можно скорее ;)
+        </p>
+      </div>
+      <div class="right">
+        <form method="post">
           <div class="block">
-            <label for="male">Мужской</label>
-            <input type="radio" id="male" name="gender" value="male" required />
-          </div>
-          <div class="block">
-            <label for="female">Женский</label>
+            <label for="firstName">Имя</label>
             <input
-              type="radio"
-              id="female"
-              name="gender"
-              value="female"
+              type="text"
+              name="firstName"
+              id="firstName"
+              placeholder="Иван"
               required
             />
           </div>
           <div class="block">
-            <label for="n/a">Предпочитаю не говорить</label>
-            <input type="radio" id="n/a" name="gender" value="N/A" required />
+            <label for="secondName">Фамилия</label>
+            <input
+              type="text"
+              name="secondName"
+              id="secondName"
+              placeholder="Иванов"
+            />
           </div>
-          <hr />
-        </div>
-        <div class="block">
-          <label for="education">Образование:</label>
-          <select name="education" id="education" required>
-            <option value="school">Среднее школьное</option>
-            <option value="bachelor">Бакалавр</option>
-            <option value="master">Магистр</option>
-            <option value="doctor">Доктор наук</option>
-          </select>
-        </div>
-        <div class="block">
-          <label for="phone">Телефон:</label>
-          <input
-            type="tel"
-            name="phone"
-            id="phone"
-            placeholder="+73352459512"
-            required
-          />
-        </div>
-        <div class="block">
-          <label for="email">Почта:</label>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Ivanivanov@gmail.com"
-            required
-          />
-        </div>
-        <button type="submit">Отправить</button>
-      </form>
+          <div class="block">
+            <label for="email">Почта</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Ivanivanov@gmail.com"
+              required
+            />
+          </div>
+          <button type="submit">Отправить</button>
+        </form>
+      </div>
     </main>
+    <footer>
+      <ul class="images">
+        <li><img src="./images/icons8-facebook-f-48.png" alt="" /></li>
+        <li><img src="./images/icons8-reddit-64.png" alt="" /></li>
+        <li><img src="./images/icons8-twitter-50.png" alt="" /></li>
+      </ul>
+    </footer>
   </body>
 </html>
